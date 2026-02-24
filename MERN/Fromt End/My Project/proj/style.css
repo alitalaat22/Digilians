@@ -1,0 +1,46 @@
+ /* this session for style court container page */
+ .fimg,
+ .bimg,
+ .pimg,
+ .timg {
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+
+
+ /* the session for style img court */
+ .fimg img,
+ .bimg image,
+ .pimg img,
+ .timg img {
+     float: left;
+     width: 23%;
+     height: 300px;
+     margin: 1%;
+     border-radius: 50px;
+ }
+
+ .standurd {
+     width: 100%;
+     margin: 1%;
+ }
+
+ .footballfield,
+ .basketballcourt,
+ .PadelCourt,
+ .tenniscourt {
+     float: left;
+     width: 1200px;
+ }
+
+ .footballfield img,
+ .basketballcourt img,
+ .PadelCourt img,
+ .tenniscourt img {
+     float: left;
+     width: 23%;
+     /* height: 200px; */
+     margin: 2%;
+     border-radius: 35px;
+ }

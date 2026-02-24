@@ -1,0 +1,23 @@
+.test{
+    background-color: #4d0663;
+    /* width: 400px; */
+    height: 350px;
+    width: 30%;
+    /* overflow: auto; */
+    transition: all 1s ease-in 1s;
+    /* border-radius: 15%; */
+    
+
+img{
+    border-radius: 50%;
+}
+}
+p{
+text-align: center;
+}
+.test:hover{
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+

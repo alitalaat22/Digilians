@@ -1,0 +1,128 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* --- Task 3, 4 & 5: CSS Grid (2D Layout) --- */
+/* Why Grid? Because we need to manage both columns (sidebar/content) and rows (header/footer). */
+.grid-parent {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background: #2c3e50;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #ecf0f1;
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    background: #fff;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #34495e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* --- Task 1 & 2: Flexbox Navigation (1D Layout) --- */
+/* Why Flexbox? Because we want to distribute items in a single horizontal row. */
+.flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Space between logo, links, and button */
+    align-items: center;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Task 1: Flexbox Cards Section --- */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows cards to drop to the next line on small screens */
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.card {
+    background: #3498db;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Flex Item Properties */
+.card-grow {
+    flex-grow: 1;
+    /* Takes up remaining space */
+}
+
+.card-fixed {
+    flex-basis: 200px;
+    /* Base width */
+    flex-shrink: 0;
+    /* Won't shrink below basis */
+}
+
+.card-align {
+    align-self: flex-end;
+    /* Overrides container align-items */
+    background: #e67e22;
+}
+
+/* --- Task 2: Media Queries (Responsiveness) --- */
+@media (max-width: 768px) {
+    .grid-parent {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+        /* Hide sidebar on mobile for cleaner look */
+    }
+
+    .flex-nav {
+        flex-direction: column;
+        /* Stack logo and menu on mobile */
+        gap: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+/* التنسيق الأساسي */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+img {
+    width: 300px;
+    transition: transform 1s ease-in-out;
+}
+
+.flex-container {
+    display: flex;
+    gap: 50px;
+}
+
+/* حركات الصور */
+.rotate-360:hover img {
+    transform: rotate(360deg);
+}
+
+.rotate-origin:hover img {
+    transform-origin: top left;
+    transform: rotate(360deg);
+}
+
+.scale-up:hover img {
+    transform: scale(1.5);
+}
+
+.scale-down:hover img {
+    transform: scale(0.5);
+}

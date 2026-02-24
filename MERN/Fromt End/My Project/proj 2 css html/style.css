@@ -1,0 +1,15 @@
+.sircle{
+
+
+
+    background-color: blue;
+    text-align: center;
+}
+.board{
+    border-radius: 50%;
+
+}
+.square{
+    background-color: brown;
+    text-align: center;
+}

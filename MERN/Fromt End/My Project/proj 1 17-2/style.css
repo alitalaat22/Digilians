@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    background-color: chocolate;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+
+h2 {
+    display: flex;
+    text-align: center;
+}
+/* 
+.drinks,
+.breakfast,
+.launch,
+.dinner {
+
+    width: 23%;
+
+} */
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+
+:root {
+    --primary-color: #6366f1;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Georgia', serif;
+}
+
+.dark-mode {
+    --bg-color: #0f172a;
+    --text-color: #f1f5f9;
+    --card-bg: #1e293b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6; 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.main-container {
+    display: flex;
+    margin-top: 60px; 
+    min-height: 200vh;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 60px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: var(--card-bg);
+    padding: 2rem;
+    border-right: 1px solid #ddd;
+}
+
+.content { flex: 1; padding: 2rem; }
+
+.hero-text {
+    font-family: var(--font-heading);
+    font-size: 5vw; 
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+}
+
+.ellipsis-box {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #e2e8f0;
+    padding: 10px;
+}
+
+
+.card {
+    position: relative; 
+    background: var(--card-bg);
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ef4444;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+
+
+.grid-section .card:nth-child(even) {
+    border-left: 5px solid var(--primary-color);
+}
+
+.quote-box {
+    position: relative;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: #fff;
+    font-style: italic;
+}
+
+.quote-box::before {
+    content: "“";
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 5rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.quote-box::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: var(--primary-color);
+}

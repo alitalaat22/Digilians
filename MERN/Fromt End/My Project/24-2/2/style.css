@@ -1,0 +1,157 @@
+body {
+    /* background-color:violet; */
+    height: 100vh;
+    font-family: sans-serif;
+    text-align: center; 
+    margin: 0;
+    background-color: #5c0b1f;
+}
+
+img {
+    width: 300px;
+    transition: transform 1s ease-in-out;
+}
+
+
+.float-container {
+    width: 700px;     
+    margin: 50px auto; 
+    overflow: hidden;  
+}
+
+.box {
+    float: left;       
+    width: 300px;
+    margin: 0 25px;   
+}
+
+
+
+.rotate-360:hover img {
+    transform: rotate(360deg);
+}
+
+.rotate-origin:hover img {
+    transform-origin: top left;
+    transform: rotate(360deg);
+}
+
+.scale-up:hover img {
+    transform: scale(1.5);
+}
+
+.scale-down:hover img {
+    transform: scale(0.5);
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+
+/* تنسيق الناف بار */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    overflow: hidden; /* لمنع انهيار الخلفية */
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.nav-links li {
+    float: left; /* لجعل الروابط بجانب بعضها */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    float: left; /* لجعل مساحة الضغط صحيحة */
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+/* لتنظيف الـ float بعد الناف بار */
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* تحديد عرض ثابت للحاوية */
+/* لتوسيط الحاوية في نص الصفحة */
+/* هامة جداً لغلق الحاوية على العناصر اللي داخلها float */
+/* لصف الصورتين بجانب بعض */
+ /* بديل الـ gap لإحداث مسافة بين الصورتين */
+/* حركات الصور */
+/* تأكد أن الكلاسات في HTML تطابق هذه الأسماء تماماً */
+/* لتنظيف الـ float */

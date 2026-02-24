@@ -1,0 +1,29 @@
+
+
+.dd{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(30, 85, 25);
+
+}
+
+
+.dd:hover .chi{
+    background-color: rgb(139, 0, 0);
+    cursor: pointer;
+}
+
+
+
+.chi{
+    width: 50%;
+    height: 500px;
+    background-color: blue;
+    overflow: auto;
+}
+
+
+.chi:hover {
+    background-color: rgb(139, 0, 0);
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.profile1 {
+    background-color: yellow;
+    width: 45%;
+    float: left;
+    /* clear: both; */
+
+}
+
+
+
+.profile2 {
+    background-color: green;
+    width: 45%;
+    float: right;
+    /* clear:; */
+
+}
+
+.img {
+    align-items: center;
+    width: 50%;
+}
+
+.img2 {
+    align-items: center;
+    width: 50%;
+}
+boady::after{clear: both;}

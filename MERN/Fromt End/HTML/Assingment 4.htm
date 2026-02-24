@@ -1,0 +1,104 @@
+<!-- Task 1
+ Semantic Blog Page -->
+
+<header>
+    <h1>The Dragon Chronicles</h1>
+    <nav>
+        <a href="#">Home</a> | <a href="#">Archives</a> | <a href="#">About</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <header>
+            <h2>Understanding Fire-Drakes</h2>
+            <p>Published on Feb 21, 2026</p>
+        </header>
+        <section>
+            <h3>Habitat</h3>
+            <p>Fire-drakes typically reside in active volcanic regions.</p>
+        </section>
+        <section>
+            <h3>Diet</h3>
+            <p>They primarily consume mineral-rich rocks and occasionally gold.</p>
+        </section>
+    </article>
+
+    <article>
+        <header>
+            <h2>The Ice Dragon Migration</h2>
+        </header>
+        <section>
+            <p>Every thousand years, these creatures move to the southern poles.</p>
+        </section>
+    </article>
+</main>
+
+<aside>
+    <h4>Related Links</h4>
+    <ul>
+        <li><a href="#">How to tame a Wyvern</a></li>
+        <li><a href="#">Dragon-proof Armor Shops</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2026 Dragon Research Society</p>
+</footer>
+
+
+
+
+<!-- Task 2
+ Media Gallery -->
+
+<h2>Dragon Media Vault</h2>
+
+<h3>Roars and Soundscapes</h3>
+<audio controls src="audio/roar1.mp3">Fire Roar</audio>
+<audio controls src="audio/ice_wind.mp3">Glacial Wind</audio>
+<audio controls src="audio/ocean_waves.mp3">Sea Habitat</audio>
+
+<h3>Dragon Sightings</h3>
+<video controls width="320" poster="images/dragon_preview.jpg">
+    <source src="video/flight.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video controls width="320" poster="images/battle_preview.jpg">
+    <source src="video/fire_breath.mp4" type="video/mp4">
+</video>
+
+<h3>Documentary Feature</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/example_id" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+
+<!-- Task 3
+Code Tutorial Page -->
+<h1>How to Code a Dragon in Python</h1>
+
+<p>First, define your dragon class:</p>
+<pre>
+<code>
+class Dragon:
+    def __init__(self, name, element):
+        self.name = name
+        self.element = element
+</code>
+</pre>
+
+<p>Next, add a method for the attack:</p>
+<pre>
+<code>
+def attack(self):
+    print(f"{self.name} uses {self.element} breath!")
+</code>
+</pre>
+
+<p>Finally, create an instance:</p>
+<pre>
+<code>
+my_dragon = Dragon("Smaug", "Fire")
+my_dragon.attack()
+</code>
+</pre>

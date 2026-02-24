@@ -1,0 +1,29 @@
+
+.f1{
+    background:rgb(64, 94, 148);
+    width: 400px;
+    height: 200px;
+    
+
+}
+
+
+.f2{
+    background:rgb(15, 28, 105);
+    width: 400px;
+    height: 200px;
+    position:relative;
+    left: 600px;
+    transition:all 2s ease-in 0.2s;
+}
+.f2:hover{
+    background-color: rgb(131, 11, 131);
+    height: 500px;
+}
+.f3{
+    background:rgb(112, 117, 45);
+    width: 400px;
+    height: 200px;
+    
+}
+
