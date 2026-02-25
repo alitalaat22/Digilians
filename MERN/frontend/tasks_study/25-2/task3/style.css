@@ -1,9 +1,9 @@
-.parent{
+/* {
     background-color: silver;
-}
+} */
 
-@media screen and(max-width:800px) {
-    .parent{
+@media screen and(max-width:600px) {
+    body{
         color: palegoldenrod;
         background-color: salmon;
         font-weight: 900;
