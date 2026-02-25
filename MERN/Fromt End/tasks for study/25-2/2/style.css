@@ -1,0 +1,19 @@
+.parent{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+}
+.child{
+    background-color: violet;
+    width: 30%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+html{
+    direction: ltr;
+}
+
+.parent:hover{
+    background-color: silver;
+}
