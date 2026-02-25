@@ -1,7 +1,8 @@
 .parent{
     background-color: silver;
 }
-@media screen and(max-width:500px) {
+
+@media screen and(max-width:800px) {
     .parent{
         color: palegoldenrod;
         background-color: salmon;
