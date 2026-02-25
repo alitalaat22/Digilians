@@ -1,0 +1,12 @@
+.parent{
+    background-color: silver;
+}
+@media screen and(max-width:500px) {
+    .parent{
+        color: palegoldenrod;
+        background-color: salmon;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+}
